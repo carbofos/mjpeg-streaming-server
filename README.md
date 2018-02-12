@@ -1,12 +1,10 @@
 Python/Django MJPEG image push Axis IP camera simulation server
 
 This is an Axis IP camera simulation program which can stream JPEG sequence to browser using push image technology.
-The technology was popular in some IP cameras because it provides a simple solution to embed your video stream into HTML page using <img /> tag.
-Old Panasonic, Linksys IP cameras and modern Axis cameras does provide MJPEG/HTTP stream.
+The technology was popular in some IP cameras because it provides a simple solution to embed your video stream into HTML page using <img /> tag. Images are transfered to browser with multipart/x-mixed-replace MIME type. Old Panasonic, Linksys IP cameras and modern Axis cameras does provide similar MJPEG/HTTP stream:
+https://en.wikipedia.org/wiki/Push_technology#HTTP_server_push
 
-This Django software have a HTML template of an Axis IP camera.
-
-To run it you should
+This Django software have a HTML template of an Axis IP camera and some sample images. To run it you should
 
 1. Install Python 2 or Python 3
 2. Install Django framework: 
