@@ -1,0 +1,295 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=10" >
+<meta http-equiv="X-UA-Compatible" content="requiresActiveX=true"/>
+<meta http-equiv="Expires" content="Tue, 12 May 1962 1:00:00 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Content-type" CONTENT="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-language" CONTENT="de">
+
+
+
+<title>AXIS M1054 Network Camera</title>
+
+<noscript>
+Your browser has JavaScript turned off.<br>For the user interface to work, you must enable JavaScript in your browser and reload/refresh this page.
+</noscript>
+
+<script language="JavaScript" type="text/javascript"><!--
+function CSS ()
+{
+  if ((navigator.appVersion.indexOf("Mac") != -1) && (navigator.appName.indexOf("Netscape") != -1)) {
+    document.write('<link rel="stylesheet" href="/css/mac_ns.css?version=143" type="text/css" />');
+
+  } else if ((navigator.appVersion.indexOf("Mac") != -1) && (navigator.appName.indexOf("Microsoft Internet Explorer") != -1)) {
+    document.write('<link rel="stylesheet" href="/css/mac_ie.css?version=143" type="text/css" />');
+
+  } else if ((navigator.appVersion.indexOf("Win") != -1) && (navigator.appName.indexOf("Netscape") != -1)) {
+    document.write('<link rel="stylesheet" href="/css/win_ns.css?version=143" type="text/css" />');
+
+  } else if ((navigator.appVersion.indexOf("Win") != -1) && (navigator.appName.indexOf("Microsoft Internet Explorer") != -1)) {
+    document.write('<link rel="stylesheet" href="/css/win_ie.css?version=143" type="text/css" />');
+
+  } else if (navigator.appName.indexOf("Netscape") != -1) {
+    // Unix or other system
+    document.write('<link rel="stylesheet" href="/css/win_ns.css?version=143" type="text/css" />');
+  } else {         
+    document.write('<link rel="stylesheet" href="/css/other.css?version=143" type="text/css" />');
+  }
+
+  // Wrapper for old browsers which can't handle getElementById
+  if(!document.getElementById) {
+     document.getElementById = function(element)
+     {
+       return eval("document.all." + element);
+     }
+  }
+}
+// -->
+</script>
+<script language="JavaScript" type="text/javascript"><!--
+CSS ();
+// -->
+</script>
+
+</head>
+
+<body class="bodyBg" topmargin="0" leftmargin="15" marginwidth="0"  marginheight="0"   onLoad="langObjView.init();DrawTB('yes', '', '1', '0', 'no', 'no', 'true', getStreamProfileNbr());dynamicResize();initSliders&#40;&#41;&#59;" onresize="dynamicResize();initSliders&#40;&#41;&#59;">
+
+<script language="JavaScript">
+<!--
+  var t1;
+  var seqOn = "no";
+
+function sequence()
+{
+  var size;
+  if (seqOn == 'no') {
+    seqOn = 'yes';
+    size = 1;
+    doSequence(size);
+  } else {
+    clearTimeout(t1);
+    seqOn = 'no';
+    link = document.URL;
+    if (link.indexOf('seq=yes' != -1)) {
+      var regexp = /seq=yes&/;
+      link = link.replace(regexp, "");
+    }
+    document.location = link;
+  }
+  return;
+}
+
+// -->
+</script>
+
+
+
+
+<form name="profileForm"><input type="hidden" name="root_StreamProfile_MaxGroups" value="20" ><input type="hidden" name="root_StreamProfile_S0_Name" value="Quality" ><input type="hidden" name="root_StreamProfile_S0_Description" value="Best image quality and full frame rate." ><input type="hidden" name="root_StreamProfile_S0_Parameters" value="videocodec=h264&amp;resolution=1280x800&amp;compression=20&amp;fps=0&amp;videokeyframeinterval=8&amp;videobitrate=0" ><input type="hidden" name="root_StreamProfile_S0_Default_Name" value="Quality" ><input type="hidden" name="root_StreamProfile_S0_Default_Description" value="Best image quality and full frame rate." ><input type="hidden" name="root_StreamProfile_S0_Default_Parameters" value="videocodec=h264&amp;resolution=1280x800&amp;compression=20&amp;fps=0&amp;videokeyframeinterval=8&amp;videobitrate=0" ><input type="hidden" name="root_StreamProfile_S1_Name" value="Balanced" ><input type="hidden" name="root_StreamProfile_S1_Description" value="Medium image quality and frame rate." ><input type="hidden" name="root_StreamProfile_S1_Parameters" value="videocodec=h264&amp;resolution=640x480&amp;compression=30&amp;fps=15&amp;videokeyframeinterval=15&amp;videobitrate=0" ><input type="hidden" name="root_StreamProfile_S1_Default_Name" value="Balanced" ><input type="hidden" name="root_StreamProfile_S1_Default_Description" value="Medium image quality and frame rate." ><input type="hidden" name="root_StreamProfile_S1_Default_Parameters" value="videocodec=h264&amp;resolution=640x480&amp;compression=30&amp;fps=15&amp;videokeyframeinterval=15&amp;videobitrate=0" ><input type="hidden" name="root_StreamProfile_S2_Name" value="Bandwidth" ><input type="hidden" name="root_StreamProfile_S2_Description" value="Low bandwidth with medium image quality." ><input type="hidden" name="root_StreamProfile_S2_Parameters" value="videocodec=h264&amp;resolution=640x480&amp;compression=50&amp;fps=15&amp;videokeyframeinterval=32&amp;videobitrate=250&amp;videomaxbitrate=1000&amp;videobitratepriority=framerate" ><input type="hidden" name="root_StreamProfile_S2_Default_Name" value="Bandwidth" ><input type="hidden" name="root_StreamProfile_S2_Default_Description" value="Low bandwidth with medium image quality." ><input type="hidden" name="root_StreamProfile_S2_Default_Parameters" value="videocodec=h264&amp;resolution=640x480&amp;compression=50&amp;fps=15&amp;videokeyframeinterval=32&amp;videobitrate=250&amp;videomaxbitrate=1000&amp;videobitratepriority=framerate" ><input type="hidden" name="root_StreamProfile_S3_Name" value="Mobile" ><input type="hidden" name="root_StreamProfile_S3_Description" value="Mobile device settings." ><input type="hidden" name="root_StreamProfile_S3_Parameters" value="videocodec=h264&amp;resolution=176x144&amp;compression=50&amp;fps=15&amp;videokeyframeinterval=32&amp;videobitrate=120&amp;videomaxbitrate=128&amp;videobitratepriority=quality&amp;audio=0" ><input type="hidden" name="root_StreamProfile_S3_Default_Name" value="Mobile" ><input type="hidden" name="root_StreamProfile_S3_Default_Description" value="Mobile device settings." ><input type="hidden" name="root_StreamProfile_S3_Default_Parameters" value="videocodec=h264&amp;resolution=176x144&amp;compression=50&amp;fps=15&amp;videokeyframeinterval=32&amp;videobitrate=120&amp;videomaxbitrate=128&amp;videobitratepriority=quality&amp;audio=0" >
+</form>
+<form name="listFormInt"><input type="hidden" name="root_ImageSource_NbrOfSources" value="1" ><input type="hidden" name="root" value="" ><input type="hidden" name="root_ImageSource_I0_Name" value="Camera" ><input type="hidden" name="root" value="" ><input type="hidden" name="root" value="" ><input type="hidden" name="root" value="" ><input type="hidden" name="root" value="" ><input type="hidden" name="root" value="" ><input type="hidden" name="root" value="" ><input type="hidden" name="root" value="" ><input type="hidden" name="root" value="" ><input type="hidden" name="root" value="" ><input type="hidden" name="root" value="" ><input type="hidden" name="root" value="" ><input type="hidden" name="root" value="" ><input type="hidden" name="root" value="" ><input type="hidden" name="root" value="" ><input type="hidden" name="root" value="" ><input type="hidden" name="root_ImageSource_I0_Sensor_AspectRatio" value="16:10" ><input type="hidden" name="root" value="" ><input type="hidden" name="root" value="" >
+</form>
+
+<form name="listFormCrop">
+  <input type="hidden" name="root_Image_I0_Name" id="root_Image_I0_Name" value="View area" />
+  <input type="hidden" name="root_Image_I0_Enabled" id="root_Image_I0_Enabled" value="yes" />
+  <input type="hidden" name="root_PTZ_Various_V1_Locked" id="root_PTZ_Various_V1_Locked" value="true" />
+</form>
+
+<form name="listFormExt">
+</form>
+
+<script language="JavaScript">
+<!--
+
+// Calculate the number of external sources that are supported by this browser
+var ext_sources = 0;
+ext_sources = document.listFormExt.elements.length/3;
+// -->
+</script>
+
+<form name="listFormPreset"><input type="hidden" name="root_PTZ_Preset_P0_ImageSource" value="0" ><input type="hidden" name="root_PTZ_Preset_P0_HomePosition" value="1" ><input type="hidden" name="root_PTZ_Preset_P0_Position_P1_Name" value="Home" ><input type="hidden" name="root_PTZ_Preset_P0_Position_P1_Data" value="tilt=-15.750000:pan=-13.789993:zoom=2134.000000" >
+</form>
+
+<form name="listFormSeq">
+</form>
+
+
+<form name="lightsForm"><input type="hidden" name="root_LightControl_L0_Name" value="Light" ><input type="hidden" name="root_LightControl_L0_DriverType" value="pwm" ><input type="hidden" name="root_LightControl_L0_SourceType" value="whiteled" ><input type="hidden" name="root_LightControl_L0_Driver" value="pa30" ><input type="hidden" name="root_LightControl_L0_Button" value="none" ><input type="hidden" name="root_LightControl_L0_Activate" value="-100" ><input type="hidden" name="root_LightControl_L0_Inactivate" value="-0" ><input type="hidden" name="root_LightControl_L0_PulseTime" value="0" >
+</form>
+<form name="formlightlevel0"
+      id="formlightlevel0"
+      action="/axis-cgi/lightcontrol.cgi" target="Temp">
+  <input type="hidden" name="light" value="1">
+  <input type="hidden" name="level" value="0">
+</form>
+
+
+<form name="outputsForm"><input type="hidden" name="root" value="" ><input type="hidden" name="root_IOPort_I0_Direction" value="input" ><input type="hidden" name="root" value="" ><input type="hidden" name="root" value="" ><input type="hidden" name="root" value="" ><input type="hidden" name="root_IOPort_I1_Direction" value="input" ><input type="hidden" name="root" value="" ><input type="hidden" name="root" value="" ><input type="hidden" name="root" value="" ><input type="hidden" name="root_IOPort_I2_Direction" value="output" ><input type="hidden" name="root_IOPort_I2_Output_Name" value="Output 1" ><input type="hidden" name="root_IOPort_I2_Output_Active" value="closed" ><input type="hidden" name="root_IOPort_I2_Output_Button" value="actinact" ><input type="hidden" name="root_IOPort_I2_Output_PulseTime" value="0" ><input type="hidden" name="root_IOPort_I2_Output_Mode" value="bistable" ><input type="hidden" name="root_IOPort_I2_Output_DelayTime" value="0" >
+</form>
+
+
+  <form name="UploadedFilesForm">
+  </form>
+
+<table width="100%" cellspacing=0 cellpadding=0 border=0><tr><td align="center">
+<form name="WizardForm" method="post">
+    <input type="hidden" name="root_Layout_Trigger_T0_Enabled" value="no" />
+
+  <input type="hidden" name="amount" value="0" />
+
+  <br>
+  <table width=778 cellspacing=0 cellpadding=0 border=0>
+    <tr class="top-mainborder">
+      <td colspan=2><img src="/static/pics/line_corner_lt_5x5px.gif" width=5 height=5 border=0 alt=""></td>
+      <td background="/static/pics/line_t_100x5px.gif"><img src="/static/pics/line_t_100x5px.gif" width=768 height=5 border=0 alt=""></td>
+      <td colspan=2><img src="/static/pics/line_corner_rt_5x5px.gif" width=5 height=5 border=0 alt=""></td>
+    </tr>
+    <tr>
+      <td class="lineBg"><img src="/static/pics/blank.gif" width="1" border=0 alt=""></td>
+      <td><img src="/static/pics/blank.gif" width="4" height=1 border=0 alt=""></td>
+      <td valign="middle" align="left" width="100%">
+        <table border=0 cellspacing=0 cellpadding=0 width="100%">
+          <tr>
+          <td>
+  <script language="JavaScript" type="text/javascript">
+  <!--
+    for (i=0; i<document.UploadedFilesForm.length; i++) {
+      if (document.UploadedFilesForm.elements[i].value.indexOf("viewer/extraLogo_left.") != -1) {
+        document.write('<img src="/local/'+document.UploadedFilesForm.elements[i].value+'">&nbsp;');
+        break;
+      }
+    }
+  -->
+  </script>
+          <a href="http://www.axis.com/" target=_blank><img src="/static/pics/logo_70x29px.gif" width=68 height=29 border=0 title="Axis" alt="Axis"></a>
+  <script language="JavaScript" type="text/javascript">
+  <!--
+    for (i=0; i<document.UploadedFilesForm.length; i++) {
+      if (document.UploadedFilesForm.elements[i].value.indexOf("viewer/extraLogo_right.") != -1) {
+        document.write('&nbsp;<img src="/local/'+document.UploadedFilesForm.elements[i].value+'">');
+        break;
+      }
+    }
+  -->
+  </script>
+        </td>
+            <td class="topTitle" align="center" id="view_prodName">AXIS M1054 Network Camera</td>
+            <td align="right">
+              <table cellpadding=0 cellspacing=5 border=0>
+                <tr>
+                  <td><a href="/" target="_top" class="linkActive" id="view_LViewTxt"></a></td><td>|</td>
+                  <td><a href="" class="linkInActive" target="_top" id="view_SetTxt1"></a></td><td>|</td>
+                  <td><a href="#" onClick="javascript:launch('/help/liveview_h.shtml?cntrlQue=no'); return false;" class="linkInActive" id="view_HelpTxt"></a></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+
+      <td><img src="/static/pics/blank.gif" width="4" border=0 alt=""></td>
+      <td class="lineBg"><img src="/static/pics/blank.gif" width=1 height=1 alt=""></td>
+    </tr>
+    <tr>
+      <td class="lineBg"><img src="/static/pics/blank.gif" width=1 height=5 alt=""></td>
+      <td colspan=3><img src="/static/pics/blank.gif" width=1 height=5 alt=""></td>
+      <td class="lineBg"><img src="/static/pics/blank.gif" width=1 height=5 alt=""></td>
+    </tr>
+    <tr class="bottom-mainborder">
+      <td colspan=2><img src="/static/pics/line_corner_lb_5x5px.gif" width=5 height=5 alt=""></td>
+      <td background="/static/pics/line_b_100x5px.gif"><img src="/static/pics/blank.gif" width=768 height=5 alt=""></td>
+      <td colspan=2><img src="/static/pics/line_corner_rb_5x5px.gif" width=5 height=5 alt=""></td>
+    </tr>
+    <tr>
+      <td colspan=5><img src="/static/pics/blank.gif" width=1 height=5 border=0 alt=""></td>
+    </tr>
+
+    <tr>
+      <td colspan=5>
+        <table width="100%" cellpadding=0 cellspacing=0 border=0>
+          <tbody>
+          <tr id="appendableTr">
+          </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan=5><img src="/static/pics/blank.gif" width=1 height=5 border=0 alt=""></td>
+    </tr>
+    <tr class="top-mainborder">
+      <td colspan=2><img src="/static/pics/line_corner_lt_5x5px.gif" width=5 height=5 border=0 alt=""></td>
+      <td background="/static/pics/line_t_100x5px.gif"><img src="/static/pics/blank.gif" width=768 height=5 border=0 alt=""></td>
+      <td colspan=2><img src="/static/pics/line_corner_rt_5x5px.gif" width=5 height=5 border=0 alt=""></td>
+    </tr>
+
+    <tr>
+      <td width=1 class="lineBg"><img src="/static/pics/blank.gif" width=1 height=1 border=0 alt=""></td>
+      <td width=4><img src="/static/pics/blank.gif" width=4 height=1 border=0 alt=""></td>
+      <td valign="top" align="center" width="768">
+
+      <table border="0" cellpadding="0" cellspacing="0" height="100%" width="776">
+          <tr height=197>
+            <td valign="top"></td>
+            <td valign="top" class="normalText" align="center" rowspan=2 colspan="2">
+              <div id="filterinstallocation"></div>
+            </td>
+            <td align="center" class="normalText">
+              <table border="0" cellpadding="3" cellspacing="3">
+                <tr>
+                  <td>
+
+                    <img src="/mjpg/video.mjpg">
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td width=4><img src="/static/pics/blank.gif" width=4 height=1 border=0 alt=""></td>
+      <td width=1 class="lineBg"><img src="/static/pics/blank.gif" width=1 height=1 border=0 alt=""></td>
+    </tr>
+    <!-- ################################################################ -->
+    <!-- Defines the table width -->
+    <tr>
+      <td colspan=1 width=1 class="lineBg"><img src="/static/pics/blank.gif" width=1 height=1 alt=""></td>
+      <td colspan=1 width=4><img src="/static/pics/blank.gif" width=1 height=1 alt=""></td>
+      <td colspan=1 width=768><img src="/static/pics/blank.gif" width=1 height=1 alt=""></td>
+      <td colspan=1 width=4><img src="/static/pics/blank.gif" width=1 height=1 alt=""></td>
+      <td colspan=1 width=1 class="lineBg"><img src="/static/pics/blank.gif" width=1 height=1 alt=""></td>
+    </tr>
+    <!-- ################################################################ -->
+    <tr class="bottom-mainborder">
+      <td colspan=2><img src="/static/pics/line_corner_lb_5x5px.gif" width=5 height=5 alt=""></td>
+      <td colspan=1 background="/static/pics/line_b_100x5px.gif"><img src="/static/pics/blank.gif" width=1 height=1 alt=""></td>
+      <td colspan=2><img src="/static/pics/line_corner_rb_5x5px.gif" width=5 height=5 alt=""></td>
+    </tr>
+
+
+    <tr>
+      <td width=1><img src="/static/pics/blank.gif" width="1" height="1" border="0" alt=""></td>
+      <td colspan=6 valign="middle" align="left">
+        <table cellpadding=0 cellspacing=5 border="0">
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+      <td width=1><img src="/static/pics/blank.gif" width="1" height="1" border="0" alt=""></td>
+    </tr>
+  </table>
+</td></tr>
+</form> <!-- wizardForm -->
+</table>
+</body>
+</html>

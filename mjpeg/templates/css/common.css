@@ -1,0 +1,120 @@
+body, h2, p, table, pre, a, input, select, textarea { font-family: verdana, arial, helvetica, sans-serif }
+
+.bg_color1       { background-color: #fff }
+.bg_color2       { background-color: #f5f5f5 }
+
+.normal_text     { color: #030; font-size: 10px; font-weight: normal }
+.footnote        { color: #030; font-size: 9px; font-weight: normal }
+.fixed_text      { color: #030; font-family: courier new, courier, monospace; font-size: 12px; font-weight: normal }
+.fixedTitle      { color: #000; font-family: courier new, courier, monospace; font-size: 12px; font-weight: normal }
+
+.gray            { color: #ccc }
+.dark_gray       { color: #999 }
+
+h2               { color: #3366cc; font-size: 18px; font-weight: bold }
+
+p                { color: #000000; font-size: 10px; font-weight: normal }
+table            { color: #000000; font-size: 9px; font-weight: normal }
+pre              { color: #000000; font-size: 9px; font-weight: normal }
+a                { color: #3366cc; font-size: 10px; font-weight: bold }
+
+.bodyBg          { background-color: #ffffff }
+.toneBg          { background-color: #eeeeee }
+.lineBg          { background-color: #cccccc }
+.funcText        { color: #666666; font-size: 10px; font-weight: normal }
+.linkActive      { color: #666666; font-size: 13px; font-weight: bold; text-decoration: none; }
+.linkInActive    { color: #3366cc; font-size: 13px; font-weight: bold; text-decoration: none; }
+.menuActive      { color: #3366cc; font-size: 13px; font-weight: bold; text-decoration: none }
+.menuInActive    { color: #666666; font-size: 13px; font-weight: bold; text-decoration: none; background-color: #daecff }
+.subMenuActive   { color: #3366cc; font-size: 13px; font-weight: normal; text-decoration: none }
+.subMenuInActive { color: #666666; font-size: 13px; font-weight: bold; text-decoration: none; background-color: #daecff }
+.alternateRows   { font-size: 10px }
+.oddItem         { color: #000000; font-size: 10px; font-weight: normal; background-color: #ffffff }
+.evenItem        { color: #000000; font-size: 10px; font-weight: normal; background-color: #eeeeee }
+.topTitle        { color: #3366cc; font-size: 18px; font-weight: bold; background-color: #ffffff }
+.subTitle        { color: #000000; font-size: 11px; font-weight: bold; background-color: #cccccc }
+.button          { color: #000000; font-size: 11px; font-weight: normal; background-color: #ffffff }
+.ol-basicMenu    { margin-top: 0; margin-bottom: 0; font-weight: normal }
+
+input            { color: #000; font-size: 10px; font-weight: normal }
+
+input.fieldInt   { width: 40px}
+input.fieldName  { width: 100px}
+input.fieldIP    { width: 120px}
+input.fieldNetAddr { width: 200px}
+
+input.btnNormal  { width: 75px }
+input.btnLonger  { width: 110px }
+input.btnXL      { width: 160px }
+input.btnXXL     { width: 200px }
+
+select           { color: #000; font-size: 10px; font-weight: normal }
+select.fixed     { color: #000; font-family: courier new, courier, monospace; font-size: 12px; font-weight: normal }
+
+textarea         { color: #000; font-size: 10px; font-weight: normal }
+
+.collapsed       { display: none; }
+.shownItems      { }
+
+.selectedStyle   { border-top: 1px solid #aeafae; border-left: 1px solid #aeafae; border-right: 1px solid #aeafae; background: #ffffff; }
+.unselectedStyle { border-top: 1px solid #aeafae; border-left: 1px solid #aeafae; border-right: 1px solid #aeafae; border-bottom: 1px solid #aeafae; background: #c8ddf2; }
+.usedBoxStyle    { border-left: 1px solid #aeafae; border-right: 1px solid #aeafae; border-bottom: 1px solid #aeafae; background: #ffffff; }
+
+form { margin:0px 0px;}
+
+.cornerBox, 
+.cornerVideoBox	{ float:left; background: url(/pics/line_corner_r_box.gif) top right no-repeat;margin:3px 3px;}
+.cornerVideoBox { margin:3px 0px; width:100%;}
+.cornerBox .content, 
+.cornerVideoBox .content  { background: url(/pics/line_corner_l_box.gif) top left no-repeat;margin:0 0;padding:7px 1px;}
+.cornerVideoBox .content  { padding:0px 0px;}
+.cornerBox .footerLeft,
+.cornerVideoBox .footerLeft   { float:none;clear:both;background: url(/pics/line_corner_l_box.gif) bottom left no-repeat; padding:0 0;}
+.cornerBox .footerRight,
+.cornerVideoBox .footerRight  { background: url(/pics/line_corner_r_box.gif) bottom right no-repeat; padding-top:7px; margin-left:7px;}
+.cornerVideoBox .footerRight    { padding-top:5px; margin-left:5px;}
+.cornerVideoBox .content table td { padding:2px 2px 0px 2px}
+.cornerVideoBox .content img.hover { opacity:.80;}
+
+.helpFooter {padding:2px 2px;}
+
+.cornerVideoPTZ .cornerTabs{ float:left; padding:0px 8px; width:75%; position:relative; top:1px;}
+.cornerVideoPTZ .cornerVideoBox{ float:none;clear:both; }
+.cornerVideoPTZ ul{ margin: 0px 0px; padding:0px 0px; width:100%; background:url(/pics/bottom_line_100x5px.gif) repeat-x bottom left; }
+.cornerVideoPTZ ul,
+.cornerVideoPTZ ul li { float:left; list-style:none; display:block; margin:0px 5px 0px 0px; }
+.cornerVideoPTZ ul li { width:80px; background:url(/pics/tab_left_21px.gif) top left no-repeat; }
+.cornerVideoPTZ ul li a { display:block; background:url(/pics/tab_right_21px.gif) top right no-repeat; padding-top:6px; padding-bottom:2px; text-decoration:none;}
+
+.cornerVideoPTZ ul li.selectedTab a { color:#000000;}
+.cornerVideoPTZ ul li.unselectedTab a { color:#3366cc;}
+.cornerVideoPTZ ul li.selectedTab { background-color:#ffffff; padding:0px 0px 1px 0px;}
+.cornerVideoPTZ ul li.unselectedTab { background-color:#eeeeee; padding:0px 0px;}
+.cornerVideoPTZ ul li a:active, 
+.cornerVideoPTZ ul li a:focus { outline:0; }
+
+.tabs .cornerTabs{ float:left; padding:0px 0px 5px 0px; position:relative; top:1px;}
+.tabs ul{ margin: 0px 0px; padding:0px 0px; width:100%; background:url(/pics/bottom_line_100x5px.gif) repeat-x bottom left; }
+.tabs ul,
+.tabs ul li { float:left; list-style:none; display:block; margin:0px 5px 0px 0px; }
+.tabs ul li { min-width:40px; background:url(/pics/tab_left_21px.gif) top left no-repeat; }
+.tabs ul li div { background:url(/pics/tab_right_21px.gif) top right no-repeat; padding: 6px 10px 2px 10px; text-decoration:none; cursor:pointer;}
+
+.tabs ul li.selectedTab div { color:#000000;}
+.tabs ul li.unselectedTab div { color:#3366cc;}
+.tabs ul li.disabledTab div { color:#aaaaaa;}
+.tabs ul li.selectedTab { background-color:#ffffff; padding:0px 0px 1px 0px;}
+.tabs ul li.disabledTab { background-color:#eeeeee; padding:0px 0px;}
+.tabs ul li.unselectedTab { background-color:#eeeeee; padding:0px 0px;}
+
+.actualSliderPos { position: absolute; border: transparent 0px solid; background: blue; font-size: 1px; }
+
+#mainMenu { padding:9px 0px; }
+#mainMenu ul { list-style:none; margin:0px 0px; padding:0px 0px; }
+#mainMenu ul li { margin:0px 0px; padding:8px 0px 8px 13px; }
+#mainMenu ul li ul li { padding:0px 0px 0px 13px; }
+#mainMenu ul li ul li ul li { padding-left:9px; }
+#mainMenu ul li.subMenuMarkerActive { background: url(/pics/arrowActive.gif) no-repeat left 12px; }
+#mainMenu ul li.subMenuMarkerInactive{ background: url(/pics/arrowInactive.gif) no-repeat left 12px; }
+#mainMenu ul li ul li.subMenuMarkerActive,
+#mainMenu ul li ul li.subMenuMarkerInactive { background-position:left 6px; }
